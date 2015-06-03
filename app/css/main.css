@@ -16,7 +16,7 @@ body {
     background-color: #eff3f7;
 }
 .page-header {
-    height: 116px;
+    height: 119px;
     position: relative;
     margin-bottom: 39px;
 }
@@ -33,7 +33,7 @@ body {
 }
 .page-header .logo {
     position: absolute;
-    top: 39px;
+    top: 36px;
     left: 0;
 }
 .social {
@@ -236,17 +236,17 @@ body {
 .contacts_item_mail {
     background-color: #41b9d4;
     display: block;
-    padding: 10px 10px 10px 20px;
+    padding: 6px 10px 6px 20px;
 }
 .contacts_item_phone {
     background-color: #48cbe8;
     display: block;
-    padding: 10px 10px 10px 20px;
+    padding: 6px 10px 6px 20px;
 }
 .contacts_item_skype {
     background-color: #51daf8;
     display: block;
-    padding: 10px 10px 10px 20px;
+    padding: 6px 10px 6px 20px;
 }
 .section {
     float: right;
