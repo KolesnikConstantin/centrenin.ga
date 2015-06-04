@@ -108,10 +108,7 @@ body {
     background: linear-gradient(to right, #e7eff3 0%, #1d667a 50%, #e7eff3 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e7eff3', endColorstr='#e7eff3', GradientType=1);
 }
-.page {
-    width: 960px;
-    margin: 0 auto;
-}
+
 .aside {
     float: left;
     width: 250px;
