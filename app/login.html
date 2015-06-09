@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Портфолио</title>
+      <meta name="description" content="Web-Developer Portfolio">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Kolesnik Constantin">
+      <link href="/bower_components/normalize.css/normalize.css" rel="stylesheet">
+      <link href="/css/main.css" rel="stylesheet">
+      <link href="/css/login.css" rel="stylesheet">
+      <link href="/fonts/fira.css" rel="stylesheet">
+      <link href="/fonts/proxima.css" rel="stylesheet">
+      <link href="/img/favicon.ico" rel="shortcut icon">
+      <script src="/js/modernizr.js"></script>
+   </head>
+   <body>
+      <!--[if lt IE 8]>
+      <p class="browsehappy">Ваш браузер <strong>устарел</strong>.
+         Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.
+      </p>
+      <![endif]-->
+      <div class="wrapper">
+        <div class="login-window">
+         <div class="login-window__header-container">
+            <h2 class="login-window__header">Авторизируйтесь
+            </h2>  
+         </div>
+            <div class="login-window__form-container">
+               <form id="login-form" class="login-form">
+                  <div class="server-message error"></div>
+                  <div class="server-message success"></div>
+                  <div class="login-form">
+                     <label for="name" class="label">Логин</label>
+                     <input id="name" name="name" class="input" type="text" placeholder="Введите логин" qtip-content="Вы не ввели логин">
+                  </div>
+                  <div class="login-form">
+                     <label for="password" class="label">Пароль</label>
+                     <input id="password" name="password" class="input" type="text" placeholder="Введите пароль" qtip-content="Вы не ввели пароль">
+                  </div>
+                  <button type="submit" class="button">Войти</button>
+               </form>
+            </div>
+         </div> 
+      </div>
+      <footer class="page-footer">
+         <div class="footer-container">
+            <div class="lock">
+               <a href="/login.html" class="login"></a>
+            </div>
+            <div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+         </div>
+      </footer>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\script>')</script>
+      <script src="js/common.js"></script>
+   </body>
+</html>

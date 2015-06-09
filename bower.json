@@ -1,7 +1,22 @@
 {
   "name": "dz1",
+   "version": "0.0.1",
+  "authors": [
+    "Constantin Kolesnik <k.kolesnik11@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+  ],
   "dependencies": {
     "jquery": "1.11.3",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "bpopup": "~0.11.0",
+    "qtip2": "~2.2.1",
+    "jquery-file-upload": "~9.10.0",
+    "jquery-placeholder": "~2.1.1",
+    "modernizr": "~2.8.3"
   }
 }

@@ -6,9 +6,10 @@
       <title>Портфолио</title>
       <meta name="description" content="Web-Developer Portfolio">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="author" content="Kolesnik Constantin">
       <link href="/bower_components/normalize.css/normalize.css" rel="stylesheet">
-      <link href="/css/main.css" rel="stylesheet">
+       <link href="/css/main.css" rel="stylesheet">
+       <link href="/css/contact_me.css" rel="stylesheet">
+     
       <link href="/fonts/fira.css" rel="stylesheet">
       <link href="/fonts/proxima.css" rel="stylesheet">
       <link href="/img/favicon.ico" rel="shortcut icon">
@@ -45,72 +46,56 @@
                </div>
             </header>
             <div class="page ">
+
+
+
                <section class="section">
-                  <article class="article">
-                     <h2 class="article-header">Основная информация</h2>
-                     <div class="avatar-box">
-                        <div><img src="img/avatar.jpg" alt="avatar"  class="avatar">
-                        </div>
+                  <div class="contact-me__container">
+                     <div class="contact-me__header-container">
+                        <h3 class="contact-me__header">У вас интересный проект? Напишите мне
+                        </h3>
                      </div>
-                     <ul class="form">
-                        <li class="form_item"><span class="form_item-subitem">Меня зовут:</span>Колесник Константин Анатольевич
-                        </li>
-                        <li class="form_item"><span class="form_item-subitem">Мой возраст:</span>32 года
-                        </li>
-                        <li class="form_item"><span class="form_item-subitem">Мой город:</span>Мурманск
-                        </li>
-                        <li class="form_item"><span class="form_item-subitem">Моя специализация:</span>FRONTEND разработчик
-                        </li>
-                        <li class="form_item">
-                           <span class="form_item-subitem">Ключевые навыки:</span>
-                           <ul class="skills">
-                              <li class="skills_item">html</li>
-                              <li class="skills_item">css</li>
-                              <li class="skills_item">javascript</li>
-                              <li class="skills_item">gulp</li>
-                              <li class="skills_item">git</li>
-                           </ul>
-                        </li>
-                     </ul>
-                  </article>
-                  <article class="article">
-                     <h2 class="article-header">Опыт работы</h2>
-                     <ul class="list">
-                        <li class="list-item_case">
-                           <p class="list_list-item_one">"Somex" - Инженер</p>
-                           <p class="list_list-item_two">Сентябрь 2014 - Настоящее время</p>
-                        </li>
-                        <li class="list-item_case">
-                           <p class="list_list-item_one">"Carnival Cruise Lines" - Assistant Manager</p>
-                           <p class="list_list-item_two">Февраль 2010 - Март 2014</p>
-                        </li>
-                     </ul>
-                  </article>
-                  <article class="article">
-                     <h2 class="article-header">Образование</h2>
-                     <ul class="list">
-                        <li class="list-item_hat">
-                           <p class="list_list-item_one">Высшее</p>
-                           <p class="list_list-item_two"> Сентябрь 2000 - Июль 2005</p>
-                        </li>
-                        <li class="list-item_doc">
-                           <p class="list_list-item_one">Курсы Loftschool</p>
-                           <p class="list_list-item_two">Mай 2015 - по настоящее время</p>
-                        </li>
-                     </ul>
-                  </article>
+                     <form class="contact-me__form">
+                        <div class="server-message error">
+                        </div>
+                        <div class="server-message success">
+                        </div>
+                        <div class="contact-me__line clearfix">
+                              <div class=" form-tab left">
+                                 <label for="name" class="label">Имя</label>
+                                 <input id="name" name="name" class="input" type="text" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
+                              </div>
+                              <div class="form-tab right">
+                                 <label for="email" class="label">Email</label>
+                                 <input id="email" name="email" class="input" type="text" placeholder="Куда мне писать" qtip-content="Вы не ввели email">
+                              </div>
+                              <div class="form-tab">
+                                 <label for="message" class="label">Сообщение</label>
+                                 <textarea id="message" name="message" class="input textarea" rows="5" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
+                              </div>
+                              <div class="captcha-container   clearfix">
+                              <label for="captcha" class="label">Введите код, указанный на картинке</label>
+                              <img src="img/captcha.png" alt="код" class="captcha left">
+                              <input id="captcha" name="captcha" class="captcha__input input" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
+                              </div>
+                              <div class="button-container">
+                                 <button type="submit" class="button-container__button-submit">Отправить</button>
+                                 <button type="reset" class="button-container__button-reset">Очистить</button>
+                              </div>
+                     </form>
+                  </div>
                </section>
                <aside class="aside">
                   <nav class="nav">
                      <ul class="nav-list">
-                        <li class="nav-list_item selected">
-                           <a href="index.html" class="nav-link selected">Обо мне</a>
+                        <li class="nav-list_item">
+                           <a href="index.html" class="nav-link">Обо мне</a>
                         </li>
                         <li class="nav-list_item">
                            <a href="my_projects.html" class="nav-link">Мои работы</a>
                         </li>
-                        <li class="nav-list_item">
-                           <a href="contact_me.html" class="nav-link">Связаться со мной</a>
+                        <li class="nav-list_item selected">
+                           <a href="#" class="nav-link selected">Связаться со мной</a>
                         </li>
                      </ul>
                   </nav>

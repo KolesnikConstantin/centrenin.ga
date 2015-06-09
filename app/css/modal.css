@@ -1,0 +1,108 @@
+.popup {
+	color: #959aa8;
+	font-size: 17px;
+	font-family: fira_sansbook;
+	width: 362px;
+    -webkit-border-radius: 4px/7px;
+    -moz-border-radius: 4px/7px;
+    border-radius: 4px/7px;
+    background-color: #eff3f7;
+    -webkit-box-shadow: 0 6px 12px 1px rgba(13,16,7,.35);
+    -moz-box-shadow: 0 6px 12px 1px rgba(13,16,7,.35);
+    box-shadow: 0 6px 12px 1px rgba(13,16,7,.35);
+    display: inline-block;
+	overflow: hidden;
+}
+.popup__header {
+	margin-bottom: 8px;
+	background-color: #48cbe8;
+	border-bottom: 9px solid #67dffa;
+}
+.popup__header__name {
+	color: #fff;
+	font-size: 25px;
+	padding: 10px 15px 1px;
+	display: inline-block;
+}
+.popup__header__close-button{
+	float: right;
+	width: 25px;
+	height: 25px;
+	background: url(../img/close-popup.png);
+	padding: 0;
+	margin: 10px;
+	border: none;
+}
+.popup__form {
+	padding: 0 21px;
+	margin: 0;
+}
+.popup__list {
+	margin-bottom: 8px;
+	position: relative;
+}
+.popup__list__input {
+	height: 37px;
+	border: 1px solid #67dffa;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fbfcfd;
+	width: 311px;
+	padding-left: 7px;
+	font-size: 13px;
+	font-family: fira_sanslight;
+	outline: none;
+}
+.textarea {
+	height: auto;
+}
+
+::-webkit-input-placeholder {color:#67dffa;}
+::-moz-placeholder          {color:#67dffa;}/* Firefox 19+ */
+:-moz-placeholder           {color:#67dffa;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#67dffa;}
+
+.popup__add-button {
+	width: 140px;
+	height: 31px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #48cbe8;
+	margin: 0 auto 22px;
+	color: #fff;
+	box-shadow: 0 3px #3ba8c0;
+	display: block;
+	border: none;
+	outline: none;
+	position: relative;
+}
+.popup__add-button:hover {
+	box-shadow: none;
+	bottom: -3px;
+}
+.popup__add-button:active {
+	box-shadow: 0 3px #3ba8c0 inset;
+	padding-top: 3px;
+}
+.upload {
+	display: block;
+  	width: 52px;
+  	height: 41px;
+  	background: url(../img/upload-file.png) 10px 7px no-repeat;
+  	background-color: #48cbe8;
+  	border-radius: 0 4px 4px 0;
+  	position: absolute;
+  	right: 0;
+}
+.upload-button {
+	border: 0; 
+   	clip: rect(0 0 0 0); 
+   	height: 1px; 
+   	margin: -1px; 
+   	overflow: hidden; 
+   	padding: 0; 
+   	position: absolute; 
+   	width: 1px; 
+}
