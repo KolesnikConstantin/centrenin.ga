@@ -32,6 +32,7 @@
 	padding: 0;
 	margin: 10px;
 	border: none;
+	outline: none;
 }
 .popup__form {
 	padding: 0 21px;
@@ -77,6 +78,7 @@
 	border: none;
 	outline: none;
 	position: relative;
+	outline: none;
 }
 .popup__add-button:hover {
 	box-shadow: none;

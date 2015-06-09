@@ -1,119 +1,124 @@
 .contact-me__container {
-	background-color: #eff3f7;
-	padding-bottom: 200px;
+background-color:#eff3f7;
+padding-bottom:200px;
 }
+
 .contact-me__header-container {
-	margin-bottom: 8px;
-	background-color: #48cbe8;
-	-webkit-border-radius: 4px 4px 0 0/3px 3px 0 0;
-	-moz-border-radius: 4px 4px 0 0/3px 3px 0 0;
-	border-radius: 4px 4px 0 0/3px 3px 0 0;
-	border-bottom: 17px solid #67dffa;
-	margin-bottom: 41px;
+background-color:#48cbe8;
+-webkit-border-radius:4px 4px 0 0 3px 0 0;
+-moz-border-radius:4px 4px 0 0 3px 0 0;
+border-radius:4px 4px 0 0 3px 0 0;
+border-bottom:17px solid #67dffa;
+margin-bottom:41px;
 }
+
 .contact-me__header {
-	font-size: 27px;
-	color: #fff;
-	padding: 56px 57px 51px;
-	font-weight: normal;
-	margin: 0;
+font-size:27px;
+color:#fff;
+font-weight:400;
+margin:0;
+padding:56px 57px 51px;
 }
+
 .contact-me__form {
-	margin: 0 122px;
+margin:0 122px;
 }
+
 .label {
-	font-family: 'fira_sanslight';
-	font-size: 19px;
-	color: #959aa8;
-} 
-.contact-me__line {
+font-family:fira_sanslight;
+font-size:19px;
+color:#959aa8;
 }
+
 .form-tab {
-	margin-bottom: 12px;
+margin-bottom:12px;
 }
-.contact-me__line .left {
-	float: left;
-	width: 48%;
-}
+
 .contact-me__line .right {
-	float: right;
-	width: 48%;
+float:right;
+width:48%;
 }
+
 .input {
-	display: block;
-	height: 37px;
-	width: 100%;
-	border: 1px solid #67dffa;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	outline: none;
-	-webkit-box-sizing: border-box; 
-  	-moz-box-sizing: border-box;
-  	box-sizing: border-box;
-  	font-family: 'fira_sanslight';
-	font-size: 13px;
-	width: 100%;
-	padding: 12px 12px;
+display:block;
+height:37px;
+border:1px solid #67dffa;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px;
+outline:none;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+font-family:fira_sanslight;
+font-size:13px;
+width:100%;
+padding:12px;
 }
+
 .textarea {
-	height: auto;
+height:auto;
 }
+
 .button-container__button-submit {
-	border-radius: 5px;
-  	background-color: #48cbe8;
-  	height: 33px;
-  	border: solid #3ba8c0;
-  	border-width: 0 0 2px 0;
-  	outline: none;
-  	color: #fff;
-  	font-family: 'fira_sansbook';
-  	font-size: 20px;
-  	padding: 0px 20px;
+border-radius:5px;
+background-color:#48cbe8;
+height:33px;
+border:solid #3ba8c0;
+outline:none;
+color:#fff;
+font-family:fira_sansbook;
+font-size:20px;
+border-width:0 0 2px;
+padding:0 20px;
 }
-.button-container__button-submit:hover {
-	border: none;
-	bottom: -3px;
-}
+
 .button-container__button-submit:active {
-	box-shadow: 0 3px #3ba8c0 inset;
-	padding-top: 3px;
+box-shadow:0 3px #3ba8c0 inset;
+padding-top:3px;
 }
+
 .button-container__button-reset {
-	border-radius: 5px;
-  	background-color: #849db5;
-  	height: 33px;
-  	border: solid #687b8f;
-  	border-width: 0 0 2px 0;
-  	outline: none;
-  	color: #fff;
-  	font-family: 'fira_sansbook';
-  	font-size: 20px;
-  	padding: 0px 20px;
-  	float: right;
+border-radius:5px;
+background-color:#849db5;
+height:33px;
+border:solid #687b8f;
+outline:none;
+color:#fff;
+font-family:fira_sansbook;
+font-size:20px;
+float:right;
+border-width:0 0 2px;
+padding:0 20px;
 }
-.button-container__button-reset:hover {
-	border: none;
-	bottom: -3px;
-}
+
 .button-container__button-reset:active {
-	box-shadow: 0 3px #687b8f inset;
-	padding-top: 3px;
+box-shadow:0 3px #687b8f inset;
+padding-top:3px;
 }
+
 .captcha-container {
-	margin: 0 auto 31px;
+margin:0 auto 31px;
 }
+
 .captcha__input {
-	height: 32px;
-  	width: 48%;
-  	margin-top: 21px;
-  	padding: 6px 12px;
-  	float: right;
+height:32px;
+width:48%;
+margin-top:21px;
+float:right;
+padding:6px 12px;
 }
-.captcha {
-	float: left;
-	width: 48%;
+
+.contact-me__line .left,.captcha {
+float:left;
+width:48%;
 }
+
+.button-container__button-submit:hover,.button-container__button-reset:hover {
+border:none;
+bottom:-3px;
+}
+
 ::-webkit-input-placeholder {color:#67dffa;}
 ::-moz-placeholder          {color:#67dffa;}/* Firefox 19+ */
 :-moz-placeholder           {color:#67dffa;}/* Firefox 18- */

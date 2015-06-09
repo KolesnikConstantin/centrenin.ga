@@ -88,6 +88,11 @@
     display: block;
     text-align: center;
     margin-bottom: 12px;
+    text-decoration: none;
+}
+.project-link:hover {
+    text-decoration: underline;
+
 }
 .project-description {
     text-align: center;
@@ -95,8 +100,6 @@
     color: #4a545d;
     margin-bottom: 30px;
 }
-
-
 .new-project__link {
     width: 178px;
     height: 129px;
@@ -107,6 +110,9 @@
     text-align: center;
     display: block;
     background: url(/img/add-box-icon.png) center 32px no-repeat;
+}
+.new-project__link:hover {
+    background: url(/img/add-box-icon.png) center 28px no-repeat;
 }
 .add-new-project {
     color: #3ba8c0;
@@ -120,4 +126,7 @@
     display: none;
  }
   
-
+::-webkit-input-placeholder {color:#67dffa;}
+::-moz-placeholder          {color:#67dffa;}/* Firefox 19+ */
+:-moz-placeholder           {color:#67dffa;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#67dffa;}

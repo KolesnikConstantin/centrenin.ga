@@ -7,9 +7,8 @@
       <meta name="description" content="Web-Developer Portfolio">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="/bower_components/normalize.css/normalize.css" rel="stylesheet">
-       <link href="/css/main.css" rel="stylesheet">
-       <link href="/css/contact_me.css" rel="stylesheet">
-     
+      <link href="/css/main.css" rel="stylesheet">
+      <link href="/css/contact_me.css" rel="stylesheet">
       <link href="/fonts/fira.css" rel="stylesheet">
       <link href="/fonts/proxima.css" rel="stylesheet">
       <link href="/img/favicon.ico" rel="shortcut icon">
@@ -22,104 +21,101 @@
       </p>
       <![endif]-->
       <div class="wrapper">
-         <div class="main-content">
-            <header class="page-header">
-               <div class="header-container">
-                  <a href="/" class="logo">
-                  <img src="img/logo.png"  class="logo-image" alt="LoftBlog Logo">
-                  <span class="logo-text">Сайт портфолио</span>
-                  </a>
-                  <ul class="social">
-                     <li class="social-item">
-                        <a href="https://vk.com/id256545363" target="_blank" class="social-link vkontakte">Вконтакте</a>
-                     </li>
-                     <li class="social-item">
-                        <a href="http://centrenin.ga" target="_blank" class="social-link twitter">Twitter</a>
-                     </li>
-                     <li class="social-item">
-                        <a  href="http://centrenin.ga" target="_blank" class="social-link facebook">Facebook</a>
-                     </li>
-                     <li class="social-item">
-                        <a  href="https://github.com/KolesnikConstantin/centrenin.ga" target="_blank" class="social-link git">Github</a>
-                     </li>
-                  </ul>
-               </div>
-            </header>
-            <div class="page ">
-
-
-
-               <section class="section">
-                  <div class="contact-me__container">
-                     <div class="contact-me__header-container">
-                        <h3 class="contact-me__header">У вас интересный проект? Напишите мне
-                        </h3>
+      <div class="main-content">
+         <header class="page-header">
+            <div class="header-container">
+               <a href="/" class="logo">
+               <img src="img/logo.png"  class="logo-image" alt="LoftBlog Logo">
+               <span class="logo-text">Сайт портфолио</span>
+               </a>
+               <ul class="social">
+                  <li class="social-item">
+                     <a href="https://vk.com/id256545363" target="_blank" class="social-link vkontakte">Вконтакте</a>
+                  </li>
+                  <li class="social-item">
+                     <a href="http://centrenin.ga" target="_blank" class="social-link twitter">Twitter</a>
+                  </li>
+                  <li class="social-item">
+                     <a  href="http://centrenin.ga" target="_blank" class="social-link facebook">Facebook</a>
+                  </li>
+                  <li class="social-item">
+                     <a  href="https://github.com/KolesnikConstantin/centrenin.ga" target="_blank" class="social-link git">Github</a>
+                  </li>
+               </ul>
+            </div>
+         </header>
+         <div class="page ">
+            <section class="section">
+               <div class="contact-me__container">
+                  <div class="contact-me__header-container">
+                     <h3 class="contact-me__header">У вас интересный проект? Напишите мне
+                     </h3>
+                  </div>
+                  <form class="contact-me__form">
+                     <div class="server-message error">
                      </div>
-                     <form class="contact-me__form">
-                        <div class="server-message error">
+                     <div class="server-message success">
+                     </div>
+                     <div class="contact-me__line clearfix">
+                        <div class=" form-tab left">
+                           <label for="name" class="label">Имя</label>
+                           <input id="name" name="name" class="input" type="text" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
                         </div>
-                        <div class="server-message success">
+                        <div class="form-tab right">
+                           <label for="email" class="label">Email</label>
+                           <input id="email" name="email" class="input" type="text" placeholder="Куда мне писать" qtip-content="Вы не ввели email">
                         </div>
-                        <div class="contact-me__line clearfix">
-                              <div class=" form-tab left">
-                                 <label for="name" class="label">Имя</label>
-                                 <input id="name" name="name" class="input" type="text" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
-                              </div>
-                              <div class="form-tab right">
-                                 <label for="email" class="label">Email</label>
-                                 <input id="email" name="email" class="input" type="text" placeholder="Куда мне писать" qtip-content="Вы не ввели email">
-                              </div>
-                              <div class="form-tab">
-                                 <label for="message" class="label">Сообщение</label>
-                                 <textarea id="message" name="message" class="input textarea" rows="5" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
-                              </div>
-                              <div class="captcha-container   clearfix">
-                              <label for="captcha" class="label">Введите код, указанный на картинке</label>
-                              <img src="img/captcha.png" alt="код" class="captcha left">
-                              <input id="captcha" name="captcha" class="captcha__input input" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
-                              </div>
-                              <div class="button-container">
-                                 <button type="submit" class="button-container__button-submit">Отправить</button>
-                                 <button type="reset" class="button-container__button-reset">Очистить</button>
-                              </div>
-                     </form>
+                        <div class="form-tab">
+                           <label for="message" class="label">Сообщение</label>
+                           <textarea id="message" name="message" class="input textarea" rows="5" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
+                        </div>
+                        <div class="captcha-container   clearfix">
+                           <label for="captcha" class="label">Введите код, указанный на картинке</label>
+                           <img src="img/captcha.png" alt="код" class="captcha left">
+                           <input id="captcha" name="captcha" class="captcha__input input" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
+                        </div>
+                        <div class="button-container">
+                           <button type="submit" class="button-container__button-submit">Отправить</button>
+                           <button type="reset" class="button-container__button-reset">Очистить</button>
+                        </div>
+                  </form>
                   </div>
-               </section>
-               <aside class="aside">
-                  <nav class="nav">
-                     <ul class="nav-list">
-                        <li class="nav-list_item">
-                           <a href="index.html" class="nav-link">Обо мне</a>
-                        </li>
-                        <li class="nav-list_item">
-                           <a href="my_projects.html" class="nav-link">Мои работы</a>
-                        </li>
-                        <li class="nav-list_item selected">
-                           <a href="#" class="nav-link selected">Связаться со мной</a>
-                        </li>
-                     </ul>
-                  </nav>
-                  <div class="contacts">
-                     <div class="contacts_header">Контакты</div>
-                     <ul class="contacts_items">
-                        <li class="contacts_item_mail">
-                           <span class="contacts_item_text-mail"></span>
-                           <a class="contacts_item_mail-icon" href="mailto:k.kolesnik11@gmail.com">k.kolesnik11@gmail.com
-                           </a>
-                        </li>
-                        <li class="contacts_item_phone">
-                           <span class="contacts_item_text-phone"></span>
-                           <a class="contacts_item_phone-icon" href="tel:+79600258195">+79600258195
-                           </a>
-                        </li>
-                        <li class="contacts_item_skype">
-                           <span class="contacts_item_text-skype"></span>
-                           <a class="contacts_item_skype-icon" href="skype:constantin.kolesnik?chat">constantin.kolesnik
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </aside>
+            </section>
+            <aside class="aside">
+            <nav class="nav">
+            <ul class="nav-list">
+            <li class="nav-list_item">
+            <a href="index.html" class="nav-link">Обо мне</a>
+            </li>
+            <li class="nav-list_item">
+            <a href="my_projects.html" class="nav-link">Мои работы</a>
+            </li>
+            <li class="nav-list_item selected">
+            <a href="#" class="nav-link selected">Связаться со мной</a>
+            </li>
+            </ul>
+            </nav>
+            <div class="contacts">
+            <div class="contacts_header">Контакты</div>
+            <ul class="contacts_items">
+            <li class="contacts_item_mail">
+            <span class="contacts_item_text-mail"></span>
+            <a class="contacts_item_mail-icon" href="mailto:k.kolesnik11@gmail.com">k.kolesnik11@gmail.com
+            </a>
+            </li>
+            <li class="contacts_item_phone">
+            <span class="contacts_item_text-phone"></span>
+            <a class="contacts_item_phone-icon" href="tel:+79600258195">+79600258195
+            </a>
+            </li>
+            <li class="contacts_item_skype">
+            <span class="contacts_item_text-skype"></span>
+            <a class="contacts_item_skype-icon" href="skype:constantin.kolesnik?chat">constantin.kolesnik
+            </a>
+            </li>
+            </ul>
+            </div>
+            </aside>
             </div>
          </div>
       </div>
