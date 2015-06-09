@@ -8,6 +8,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="/bower_components/normalize.css/normalize.css" rel="stylesheet">
       <link href="/css/main.css" rel="stylesheet">
+      <link href="/css/my_projects.css" rel="stylesheet">
+      <link href="css/modal.css" rel="stylesheet">
       <link href="/css/contact_me.css" rel="stylesheet">
       <link href="/fonts/fira.css" rel="stylesheet">
       <link href="/fonts/proxima.css" rel="stylesheet">
@@ -44,7 +46,7 @@
                </ul>
             </div>
          </header>
-         <div class="page ">
+         <div class="page clearfix">
             <section class="section">
                <div class="contact-me__container">
                   <div class="contact-me__header-container">
@@ -71,29 +73,29 @@
                         </div>
                         <div class="captcha-container   clearfix">
                            <label for="captcha" class="label">Введите код, указанный на картинке</label>
-                           <img src="img/captcha.png" alt="код" class="captcha left">
-                           <input id="captcha" name="captcha" class="captcha__input input" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
+                           <div class="g-recaptcha" data-sitekey="6Ld3EggTAAAAAGDqnF3A_HW_FOQ0qVsYVfP8VCzA"></div>
                         </div>
                         <div class="button-container">
                            <button type="submit" class="button-container__button-submit">Отправить</button>
                            <button type="reset" class="button-container__button-reset">Очистить</button>
                         </div>
+                        </div>
                   </form>
                   </div>
             </section>
             <aside class="aside">
-            <nav class="nav">
-            <ul class="nav-list">
-            <li class="nav-list_item">
-            <a href="index.html" class="nav-link">Обо мне</a>
-            </li>
-            <li class="nav-list_item">
-            <a href="my_projects.html" class="nav-link">Мои работы</a>
-            </li>
-            <li class="nav-list_item selected">
-            <a href="#" class="nav-link selected">Связаться со мной</a>
-            </li>
-            </ul>
+              <nav class="nav">
+                 <ul class="nav-list">
+                    <li class="nav-list_item">
+                        <a href="index.html" class="nav-link">Обо мне</a>
+                    </li>
+                    <li class="nav-list_item">
+                        <a href="my_projects.html" class="nav-link">Мои работы</a>
+                    </li>
+                    <li class="nav-list_item selected">
+                        <a href="#" class="nav-link selected">Связаться со мной</a>
+                  </li>
+                </ul>
             </nav>
             <div class="contacts">
             <div class="contacts_header">Контакты</div>
@@ -124,11 +126,17 @@
             <div class="lock">
                <a href="/login.html" class="login"></a>
             </div>
-            <div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+            <div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его
+            </div>
          </div>
       </footer>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\script>')</script>
       <script src="js/common.js"></script>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+     <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+     <script src="bower_components/qtip2/jquery.qtip.js"></script>
+     <script src="js/plugins.js"></script>
+     <script src="js/main.js"></script>
    </body>
 </html>
