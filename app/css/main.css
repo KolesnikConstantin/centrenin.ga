@@ -285,19 +285,19 @@ body {
 .avatar {
     width: 100%;
 }
-/*.form {
+.formi {
     list-style-type: none;
     padding: 0px;
     margin: 15px 0 40px 0;
     display: inline-block;
     width: 370px;
 }
-.form_item-subitem {
+.formi_item-subitem {
     font-family: 'fira_sansmedium';
     font-size: 17px;
     line-height: 199%;
     padding-right: 18px;
-}*/
+}
 .skills {
     width: 194px;
     float: right;
