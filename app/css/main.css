@@ -285,7 +285,7 @@ body {
 .avatar {
     width: 100%;
 }
-.form {
+/*.form {
     list-style-type: none;
     padding: 0px;
     margin: 15px 0 40px 0;
@@ -297,7 +297,7 @@ body {
     font-size: 17px;
     line-height: 199%;
     padding-right: 18px;
-}
+}*/
 .skills {
     width: 194px;
     float: right;

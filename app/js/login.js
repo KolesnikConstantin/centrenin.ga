@@ -1,31 +1,20 @@
-// Модуль добавления проекта
-var addProject = (function (){
+// Модуль авторизации
+var loginModule = (function (){
 
 	var init = function(){
-				console.log('Инициализация модуля addProject');
+				console.log('Инициализация модуля loginModule');
 				_setUpListners();
 			},
 			_setUpListners = function (){
-				$('#add-new-item').on('click', _showModal); // открыть модальное окно
-				$('#add-new-project').on('submit', _addProject); // добавление проекта
+				$('#login').on('submit', _submitForm); // отправка формы
 			},
-			_showModal = function (){
-      	console.log('Вызов модального окна');
-	      $('#new-progect-popup').bPopup({
-	        speed: 650,
-	        transition: 'slideDown',
-	        onClose: function () {
-	          this.find('.form').trigger("reset"); // сбрасываем форму
-	        }
-	      });
-    	},
-    	_addProject = function (ev){
-    		console.log('Работаем с формой добавления проекта');
+			_submitForm = function (ev) {
+	      console.log('Работаем с формой');
 
 	      ev.preventDefault();
 
-	      var form = $(this),
-	          url = '/ajax.php',
+	      var form = $(this),          
+	          url = '/login.php',
 	          defObject = _ajaxForm(form, url);
 
 	      if (defObject) {
@@ -35,15 +24,13 @@ var addProject = (function (){
 
 	          if ( status === 'OK'){
 	            form.trigger('reset');
-	            form.find('.success-mes').text(mes).show();
-	            // TODO: отрисовать новый элемент в DOM при помощи js шаблона
-	            location.reload(); // сразу перезагрузим страницу
+	            form.find('.success-mes').text(mes).show();           
 	          } else{
 	            form.find('.error-mes').text(mes).show();
 	          }
 	        });
-	      }      
-    	},
+	      }
+	    },
 	    _ajaxForm = function (form, url) {
       
 	      if (!validation.validateForm(form)) return false;  // Возвращает false, если не проходит валидацию 
@@ -66,4 +53,4 @@ var addProject = (function (){
 
 })();
 
-addProject.init();
+loginModule.init();
