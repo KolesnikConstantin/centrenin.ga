@@ -15,113 +15,30 @@
     margin: 0 0 27px;
     display: table;
 }
-.gallery-container {
-    padding: 0 0 40px;
-    overflow: hidden;
-    position: relative;
-    left: 3px;
-}
-.project {
-    list-style: none;
-    display: inline-block;
-    font: 15px/100% fira_sansregular;
-    color: #4a545d;
-    width: 182px;
-    margin: 0 15px 30px;
-    vertical-align: top;
-}
-.project__box {
-    width: 178px;
-    height: 129px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
+
+/* _____________ Добавить проект _________ */
+.add-new-item{  
+    border: dashed 1px #3ba8c0;
     border-radius: 4px;
-    border: 2px solid #3ba8c0;
-    margin-bottom: 13px;
-    position: relative;
-    overflow: hidden;
+    height: 128px;
+    text-decoration: none;
 }
-.project-image {
+.add-new-item .add-new-link{
+    background: url('/img/add-box-icon.png') center 33px no-repeat; 
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: #3ba8c0;
+    font-size: 13px;
+}
+.add-new-item .add-new-text{
+    position: absolute;
+    padding-top: 76px;
+    text-align: center;
     width: 100%;
 }
-.project-name__box {
-    height: 129px;
-    width: 178px;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    background-color: #4191bb;
-    opacity: 0;
-    -moz-opacity: 0;     
-}
-.project-name__box:hover {
-    opacity: .75;
-    -moz-opacity: 0.75; 
-    filter:alpha(opacity=75);
-    -webkit-transform: scale(1);
-    transform:scale(1);
-    
-}
-.project-name {
-    color: #fff;
-    font-size: 12px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 3px solid #fff;
-    padding: 3px;
-    position: relative;
-    top: 45%;
-    text-decoration: none;
-    filter:alpha(opacity=0); 
-    transform: scale(0);
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-}
-.project-name__box:hover  .project-name {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-}
-.project-link {
-    font-size: 13px;
-    font-family: fira_sansmedium_italic;
-    color: #3ba8c0; 
-    display: block;
-    text-align: center;
-    margin-bottom: 12px;
-    text-decoration: none;
-}
-.project-link:hover {
+.add-new-item .add-new-link:hover{
     text-decoration: underline;
-
-}
-.project-description {
-    text-align: center;
-    margin: 0;
-    color: #4a545d;
-    margin-bottom: 30px;
-}
-.new-project__link {
-    width: 178px;
-    height: 129px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: dashed 1px #3ba8c0;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    background: url(/img/add-box-icon.png) center 32px no-repeat;
-}
-.new-project__link:hover {
-    background: url(/img/add-box-icon.png) center 28px no-repeat;
-}
-.add-new-project {
-    color: #3ba8c0;
-    font-size:  13px;
-    font-family: fira_sanslight;
-    text-decoration: none;
-    padding-top: 75px;
 }
 
 #new-progect-popup {
@@ -143,3 +60,118 @@
 	font-size: 13px;
 }
 /* _____________ // тултипы _________ */
+
+.projects-wrapper{
+    margin: 0 20px;
+}
+.projects-wrapper .gallery-container{
+    padding: 0;
+  margin: 0 0 0 -25px;
+}
+
+
+.gallery-container .project{
+    width: 183px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    margin-bottom: 38px;
+    margin-left: 25px;
+}
+.gallery-container .project__box{
+    width: 100%;
+    height: 129px;
+    border-radius: 4px; 
+    margin-bottom: 3px;
+}
+.project .project-image{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #3ba8c0;
+    border-radius: 4px;
+}
+.project:hover .project-image{
+    -moz-opacity: 0.20;
+    opacity:.20;
+    filter: alpha(opacity=20);
+}
+.project:hover .project__box{
+    background-color: rgb( 1, 108, 164);
+}
+.project .project-name__box{
+    position:absolute;
+    width: 100%;
+    top: 55px;
+    text-align: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.project .project-name {
+    font-family: 'fira_sansbook';
+    font-size: 12px;
+    border: solid 3px #eff3f7;
+    color: #eff3f7;
+    text-decoration: none;
+    border-radius: 5px; 
+    padding: 0 4px;
+}
+.project:hover .project-name__box {    
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+.project .project-link{
+    color: #3ba8c0;
+    font-family: 'fira_sanslight_italic';
+    font-size: 13px;
+    text-decoration: none;
+}
+.project .project-description{
+    font-size: 15px;
+    margin: 5px 0;
+    line-height: 1.2;
+}
+
+
+* Старый ei (для него пишем другую анимацию)*/
+.lt-ie9 .menu ul li{
+    border-bottom: none;
+}
+.lt-ie9 .menu ul li.current{
+    margin-top: 0;
+}
+.lt-ie9 .my-work .item .project-name__box{
+    display: none;
+}
+.lt-ie9 .my-work .item:hover .project-name__box {    
+    display: block;
+}
+/* // Старый ei */
+
+@-webkit-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(200%); opacity: 0;}
+    to { -webkit-transform: translateY(0%) scale(1); opacity: 1;}
+}
+
+@-moz-keyframes moveFromBottom {
+    from { -moz-transform: translateY(200%); opacity: 0;}
+    to { -moz-transform: translateY(0%); opacity: 1;}
+}
+@-ms-keyframes moveFromBottom {
+    from { -ms-transform: translateY(200%); opacity: 0;}
+    to { -ms-transform: translateY(0%); opacity: 1;}
+}
+@-o-keyframes moveFromBottom {
+    from { -o-transform: translateY(200%); opacity: 0;}
+    to { -o-transform: translateY(0%); opacity: 1;}
+}
+@keyframes moveFromBottom {
+    from { transform: translateY(200%); opacity: 0;}
+    to { transform: translateY(0%); opacity: 1;}
+}
+

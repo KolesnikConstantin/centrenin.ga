@@ -1,8 +1,22 @@
 // Модуль добавления проекта
 var addProject = (function (){
 
+
+ 
 	var init = function(){
 				console.log('Инициализация модуля addProject');
+				$('#fileupload').fileupload({
+					
+                //url: 'actions/upload.php',
+                dataType: 'json',
+                add: function(e, data){ 
+                
+
+                    $('#filename').val("ok");
+                    console.log();
+                    console.log('Изменяем placeholder для input');
+                }
+            })
 				_setUpListners();
 			},
 			_setUpListners = function (){

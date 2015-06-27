@@ -3,6 +3,8 @@ var validation = (function (){
 
 	var init = function(){
 				console.log('Инициализация модуля validation');
+				
+
 				_setUpListners();
 			},
 			validateForm = function (form) { // Проверяет, чтобы все поля формы были не пустыми. Если пустые - вызывает тултипы

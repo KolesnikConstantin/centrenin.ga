@@ -51,6 +51,7 @@
                <section class="section">
                   <article class="gallery">
                      <h2 class="gallery-header">Мои работы</h2>
+                    <div class="projects-wrapper">
                      <ul class="gallery-container">
                         <li class="project">
                            <div class="project__box">
@@ -117,13 +118,14 @@
                            <p class="project-description">Сайт библиотеки Modernizr
                            </p>
                         </li>
-                        <li class="project">
+                        <li class="project add-new-item">
                            <a href="#" class="new-project__link add-new-link" id="add-new-item">
                               <div id="add-new-item" class="add-new-project">Добавить проект
                               </div>
                            </a>
                         </li>
                      </ul>
+                     </div>
                   </article>
                </section>
                <aside class="aside">
@@ -261,13 +263,18 @@
     <!-- / МОДАЛЬНОЕ ОКНО -->
     <!-- / Добавить новый проект --> 
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="bower_components/jQuery/dist/jquery-1.11.0.min.js"><\script>')</script>
 
     <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
     <script src="bower_components/qtip2/jquery.qtip.js"></script>
       <script src="bower_components/bpopup/jquery.bpopup.js"></script>
-
+      <script src="bower_components/jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
+    <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+    <script src="bower_components/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+    <!-- The basic File Upload plugin -->
+    
+      	<script src="bower_components/jquery-file-upload/js/jquery.fileupload.js"></script>
       <script src="js/plugins.js"></script>
     	<script src="js/main.js"></script>
       <script src="js/add_project.js"></script>
